@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding-top: 60px;
+}
+
+/*헤더 부분*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff; 
+    padding: 5px 20px;
+    z-index: 100;
+
+    box-shadow: 0 2px 5px rgba(125, 124, 124, 0.3);
+}
+
+/*.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}*/
+
+.logo img {
+    width: 70px;
+    margin-right: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.mirroring img {
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+
+/*사이드바 부분*/
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    color: #b3b3b3;
+    padding: 40px 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.sidebar-item {
+    display: flex;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.playlist-list ul {
+    list-style: none; /* 목록 스타일 제거 */
+    padding: 0; 
+    margin: 0; 
+}
+
+.playlist-item {
+    padding: 10px 10px; 
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.playlist-item:hover {
+    background-color: #8a8484; /* 마우스 오버 시 배경색 변경 */
+}
+
+.playlist-item span {
+    display: block; /* 각 span 요소를 블록 요소로 변경 */
+}
+
+.small-text {
+    font-size: 0.5em; /* 텍스트 크기를 20% 줄임 */
+}
+
+
+.sidebar-item span {
+    display: block; /* 블록 요소로 변경 */
+}
+
+.sidebar-item:hover {
+    background-color: #8a8484;
+}
+
+.sidebar-item:nth-child(5) { /*+ 새 재생목록*/
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    padding: 10px 0;
+    margin: 10px 0; 
+    border-radius: 20px;
+}
+
+.sidebar-item:nth-child(5):hover {
+    background-color: #8a8484;
+}
+
+.sidebar-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #282828;
+    margin: 20px 0;
+}
